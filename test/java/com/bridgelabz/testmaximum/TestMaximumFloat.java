@@ -6,7 +6,7 @@ import org.junit.Test;
 public class TestMaximumFloat {
 	@Test
 	public void testFirstMaxInteger() {
-		Float max = TestMaximum.testMaximumFloat(30.5f, 10.25f, 20.65f);
+		Float max = TestMaximum.testMaximum(30.5f, 10.25f, 20.65f);
 		boolean firstFloat;
 		if (max.equals(30.5f)) {
 			firstFloat = true;
@@ -18,7 +18,7 @@ public class TestMaximumFloat {
 
 	@Test
 	public void testSecondMaxFloat() {
-		Float max = TestMaximum.testMaximumFloat(10.25f, 30.5f, 20.65f);
+		Float max = TestMaximum.testMaximum(10.25f, 30.5f, 20.65f);
 		boolean secondFloat;
 		if (max.equals(30.5f)) {
 			secondFloat = true;
@@ -30,7 +30,7 @@ public class TestMaximumFloat {
 	
 	@Test
 	public void testThirdMaxFloat() {
-		Float max = TestMaximum.testMaximumFloat(10.25f, 30.5f, 40.65f);
+		Float max = TestMaximum.testMaximum(10.25f, 30.5f, 40.65f);
 		boolean thirdFloat;
 		if (max.equals(40.65f)) {
 			thirdFloat = true;

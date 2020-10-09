@@ -7,7 +7,7 @@ import org.junit.Assert;
 public class TestMaximumInteger {
 	@Test
 	public void testFirstMaxInteger() {
-		Integer max = TestMaximum.testMaximumInt(30, 10, 20);
+		Integer max = TestMaximum.testMaximum(30, 10, 20);
 		boolean firstInteger;
 		if (max.equals(30)) {
 			firstInteger = true;
@@ -19,7 +19,7 @@ public class TestMaximumInteger {
 
 	@Test
 	public void testSecondMaxInteger() {
-		Integer max = TestMaximum.testMaximumInt(20, 30, 10);
+		Integer max = TestMaximum.testMaximum(20, 30, 10);
 		boolean secondInteger;
 		if (max.equals(30)) {
 			secondInteger = true;
@@ -31,7 +31,7 @@ public class TestMaximumInteger {
 
 	@Test
 	public void testThirdMaxInteger() {
-		Integer max = TestMaximum.testMaximumInt(20, 30, 40);
+		Integer max = TestMaximum.testMaximum(20, 30, 40);
 		boolean thirdInteger;
 		if (max.equals(40)) {
 			thirdInteger = true;

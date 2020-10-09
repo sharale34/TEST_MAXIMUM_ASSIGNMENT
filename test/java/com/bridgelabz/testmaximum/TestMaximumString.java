@@ -6,9 +6,8 @@ import org.junit.Test;
 public class TestMaximumString {
 	@Test
 	public void testFirstMaxString() {
-		String max = TestMaximum.testMaximum("Peach", "Apple", "Banana");
 		boolean firstString;
-		if (max.equals("Peach")) {
+		if ((TestMaximum.testMaximum("Peach", "Apple", "Banana")).equals("Peach")) {
 			firstString = true;
 		} else {
 			firstString = false;
@@ -18,9 +17,8 @@ public class TestMaximumString {
 
 	@Test
 	public void testSecondMaxString() {
-		String max = TestMaximum.testMaximum("Apple", "Peach", "Banana");
 		boolean secongString;
-		if (max.equals("Peach")) {
+		if ((TestMaximum.testMaximum("Apple", "Peach", "Banana")).equals("Peach")) {
 			secongString = true;
 		} else {
 			secongString = false;
@@ -30,9 +28,8 @@ public class TestMaximumString {
 
 	@Test
 	public void testThirdMaxString() {
-		String max = TestMaximum.testMaximum("Apple", "Banana", "Peach");
 		boolean thirdString;
-		if (max.equals("Peach")) {
+		if ((TestMaximum.testMaximum("Apple", "Banana", "Peach")).equals("Peach")) {
 			thirdString = true;
 		} else {
 			thirdString = false;

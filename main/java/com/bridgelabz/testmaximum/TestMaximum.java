@@ -14,11 +14,11 @@ public class TestMaximum<T extends Comparable<T>> {
 	public static <T extends Comparable<T>> T testMaximum(T... values) {
 		Arrays.sort(values);
 		T max = values[values.length - 1];
-		printMaxParameter(max);
+		printMax(max);
 		return max;
 	}
 
-	public static <Parameter> void printMaxParameter(Parameter max) {
+	public static <T> void printMax(T max) {
 		System.out.printf("The maximum is: %s.\n", max);
 	}
 }
